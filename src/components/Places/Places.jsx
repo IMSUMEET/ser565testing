@@ -8,14 +8,14 @@ import Img5 from "../../assets/places/place5.jpg";
 import Img6 from "../../assets/places/place6.jpg";
 
 const PlacesData = [
-  // {
-  //   img: Img1,
-  //   title: "Boat",
-  //   location: "USA",
-  //   description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  //   price: 6700,
-  //   type: "Cultural Relax",
-  // },
+  {
+    img: Img1,
+    title: "Boat",
+    location: "USA",
+    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    price: 6700,
+    type: "Cultural Relax",
+  },
   {
     img: Img2,
     title: "Taj Mahal",
