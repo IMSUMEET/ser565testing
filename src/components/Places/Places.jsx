@@ -8,14 +8,14 @@ import Img5 from "../../assets/places/place5.jpg";
 import Img6 from "../../assets/places/place6.jpg";
 
 const PlacesData = [
-  {
-    img: Img1,
-    title: "Boat",
-    location: "USA",
-    description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    price: 6700,
-    type: "Cultural Relax",
-  },
+  // {
+  //   img: Img1,
+  //   title: "Boat",
+  //   location: "USA",
+  //   description: "lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  //   price: 6700,
+  //   type: "Cultural Relax",
+  // },
   {
     img: Img2,
     title: "Taj Mahal",
@@ -62,13 +62,13 @@ const PlacesData = [
   },
 ];
 
-const Places = ({ handleOrderPopup }) => {
+const Places = ({ handleOrderPopup, title = "Best Places to Visit" }) => {
   return (
     <>
-      <div className="dark:bg-gray-900 dark:text-white bg-gray-50 py-10">
+      <div id="places" className="dark:bg-gray-900 dark:text-white bg-gray-50 py-10">
         <section data-aos="fade-up" className="container ">
           <h1 className=" my-8 border-l-8 border-primary/50 py-2 pl-2 text-3xl font-bold">
-            Best Places to Visit
+            {title}
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {PlacesData.map((item, index) => (

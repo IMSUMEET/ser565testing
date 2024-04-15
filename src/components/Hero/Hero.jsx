@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const [priceValue, setPriceValue] = React.useState(30);
+  const navigation = useNavigate();
 
   return (
     <div className=" bg-black/20 h-full">
@@ -70,7 +72,14 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <button className="bg-gradient-to-r from-primary to-secondary text-white hover:scale-105 px-4 py-2 rounded-full duration-200 absolute -bottom-5 left-1/2 -translate-x-1/2">
+            {/*  onClick={()=>{} */}
+            <button
+              onClick={() => {
+                // window.location.href = "/#places";
+                navigation("/best-places")
+              }}
+              className="bg-gradient-to-r from-primary to-secondary text-white hover:scale-105 px-4 py-2 rounded-full duration-200 absolute -bottom-5 left-1/2 -translate-x-1/2"
+            >
               Search Now
             </button>
           </div>

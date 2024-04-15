@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../components/Hero/Hero";
-import NatureVid from "../assets/video/main.mp4";
 import BlogsComp from "../components/Blogs/BlogsComp";
 import Places from "../components/Places/Places";
 import Testimonial from "../components/Testimonial/Testimonial";
@@ -26,13 +25,13 @@ const Home = () => {
             muted
             className="absolute right-0 top-0 h-[700px] w-full object-cover z-[-1]"
           >
-            <source src={NatureVid} type="video/mp4" />
+            <source src={""} type="video/mp4" />
           </video>
           <Hero />
         </div>
-        <Places handleOrderPopup={handleOrderPopup} />
+        <Places handleOrderPopup={handleOrderPopup} title="Best Places for you" />
         <BannerPic img={BannerImg} />
-        <BlogsComp />
+        {/* <BlogsComp /> */}
         <Banner />
         <BannerPic img={Banner2} />
         <Testimonial />
