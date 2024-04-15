@@ -31,7 +31,7 @@ const Home = () => {
         </div>
         <Places handleOrderPopup={handleOrderPopup} title="Best Places for you" />
         <BannerPic img={BannerImg} />
-        {/* <BlogsComp /> */}
+        <BlogsComp />
         <Banner />
         <BannerPic img={Banner2} />
         <Testimonial />
